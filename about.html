@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Page</title>
+  <style>
+
+    body {
+      font-family: Arial black; 
+      margin: 0;
+      padding: 0;
+      background-color: #E3F2FD; /* Light Blue Background */
+      color: black; /* Default text color */
+      scroll-behavior: smooth;
+    }
+
+    /* Header Section */
+    .header {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: #BBDEFB; /* Light Blue */
+    }
+
+    .header h1 {
+      font-size: 32px;
+      color: #0D47A1; /* Dark Blue */
+      margin-bottom: 20px;
+    }
+
+    .discover-btn {
+      background-color: #64B5F6; /* Medium Blue */
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 20px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .discover-btn:hover {
+      background-color: #1976D2; /* Deep Blue */
+    }
+
+    /* Navigation Bar */
+    .navbar {
+      background-color: #64B5F6;
+      padding: 10px 0;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar ul li {
+      margin: 0 15px;
+    }
+
+    .navbar ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .navbar ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Section Styles */
+    section {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    section h2 {
+      font-size: 26px;
+      color: #1565C0; /* Rich Blue */
+      margin-bottom: 20px;
+    }
+
+    section p {
+      font-size: 18px;
+    }
+
+    /* Favorites Section */
+    .favorites {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .favorite-item {
+      background-color: #E3F2FD; /* Light Blue */
+      width: 200px;
+      padding: 10px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      color: #0D47A1; /* Dark Blue */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .favorite-item:hover {
+      transform: scale(1.2);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .favorite-item ul {
+      list-style: disc;
+      padding-left: 20px;
+      text-align: left; /* Align bullets properly */
+      margin: 10px 0 0 0;
+    }
+
+    .favorite-item ul li {
+      color: black; /* Ensure bullets and text are black */
+      font-size: 14px;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #64B5F6;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Hello, I'm Leslinne</h1>
+    <a href="#about"><button class="discover-btn">Discover More</button></a>
+  </div>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#favorites">My Favorites</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi, I'm Leslinne, a creative soul who loves learning and sharing positivity. </p>
+    <p>I enjoy exploring new skills, expressing myself through art, and connecting with like-minded individuals. Life is a journey, and I’m here to make the most of it!</p>
+  </section>
+
+  <section id="favorites">
+    <h2>My Favorites</h2>
+    <div class="favorites">
+      <div class="favorite-item">
+        <p>Cooking</p>
+        <ul>
+          <li>Pork Adobo</li>
+          <li>Sinigang na Bangus</li>
+        </ul>
+      </div>
+      <div class="favorite-item">
+        <p>Playing Online Games</p>
+        <ul>
+          <li>Mobile Legends</li>
+          <li>Call of Duty</li>
+          <li>PUBG</li>
+        </ul>
+      </div>
+      <div class="favorite-item">
+        <p>Sports</p>
+        <ul>
+          <li>Basketball</li>
+          <li>Badminton</li>
+          <li>Chess</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Facebook: Leslinne Corpuz</p>
+    <p>Phone: 09123456789</p>
+    <p>Email: les@gmail.com</p>
+  </section>
+
+  <footer class="footer">
+    <p>©2024 All Rights Reserved</p>
+  </footer>
+</body>
+</html>
